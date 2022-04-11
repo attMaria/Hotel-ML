@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="geral.css" type="text/css">
+    <script src="geral.js"></script>
+
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--.subtitulo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <!--.cursiva-->
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="" href="conteudos/logo.png">
+    <title>HoTel ML</title>
+
+
+</head>
+
+<body id="barraLateral" class="scrollbar">
+    <div id="cabecalho" class="imgCeu">
+        <header class="fundoCinza">
+            <figure class="logo">
+                <a href="index.html"><img src="conteudos/logo.png" alt="Logomarca do HoTel ML"></a>
+            </figure>
+            <nav class="navegacao">
+                <ul>
+                    <li class="subtitulo linkQuartos">
+                        <a href="quartos.html">Quartos</a>
+                    </li>
+                    <li class="subtitulo linkLazer">
+                        <a href="lazer.html">Lazer</a>
+                    </li>
+                    <li class="subtitulo linkReserva">
+                        <a href="reserva.html">Reserva</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+    <h1 class="cursiva fundoVazio">----Reserva----</h1>
+    <div class="imgView">
+        <div id="formulario" class="fundoBranco">
+
+            <h2 class="cursiva subtitulo">Dados de contato</h2>
+            <h3 id="textoRadio" class="subtitulo"> Por favor selecione qual meio é preferível para contato:</h3>
+            <div class="linha1">
+                <p class="linha">
+                    <input class="radio" type="radio" name="contato" value="telefone" onclick="ocultar()" onfocus="ocultarTextoEscondido()">
+                    <label class="textos">Telefone</label>
+                    <input id="telefoneInput" type="text" name="telefone" data-mask="(00) 0000-0000"
+                        data-mask-selectonfocus="true"  onfocus="ocultarTextoEscondido()"/>
+                </p>
+                <p class="linha">
+                    <input class="radio" type="radio" name="contato" value="email" onclick="ocultar()" onfocus="ocultarTextoEscondido()">
+                    <label class="textos">Email</label>
+                    <input id="emailInput" type="email" name="email"  onfocus="ocultarTextoEscondido()"/>
+                </p>
+            </div>
+
+            <h2 class="cursiva subtitulo">Dados da reserva</h2>
+            <div class="linha1">
+                <p id="checkIn" class="linha">
+                    <label class="textos">Check-in
+                    </label>
+                    <input type="date" name="dataCheckIn" id="dataCheckIn" onfocus="ocultarTextoEscondido()"/>
+                </p>
+                <p id="checkOut" class="linha">
+                    <label class="textos">Check-out</label>
+                    <input type="date" name="dataCheckOut" id="dataCheckOut" onfocus="ocultarTextoEscondido()">
+                </p>
+            </div>
+
+            <div class="linha1">
+                <p id="quartos" class="linha">
+                    <label class="textos linha">Quarto</label>
+                    <select name="quartos" class="linha" onfocus="ocultarTextoEscondido()">
+                        <optgroup class="linha" value="Quartos">
+                            <option value="suitePremium" class="linha">Suíte Premium</option>
+                            <option value="suiteMaster" class="linha">Suíte Master</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p id="hospedes" class="linha">
+                    <label class="textos linha"> Hóspedes</label>
+                    <input type="number" min="1" maxlength="2" id="inputVerde" value="2" onfocus="ocultarTextoEscondido()">
+                </p>
+            </div>
+
+            <div id="containerBt">
+                <input type="button" onclick="exibir()" id="btVerificar" value="Verificar disponibilidade"
+                    class="linha cursiva">
+            </div>
+
+            <div id="textoEscondido">
+                <h2 class="cursiva subtitulo">
+                    Obrigado por entrar em contato conosco!
+                </h2><br>
+                <h3 class="subtitulo">
+                    Verifique o seu meio de contato cadastrado, enviaremos uma mensagem para você, além disso, <br> sinta-se à vontade para explorar diferentes datas e acomodações.
+                </h3>
+                <h3 class="cursiva subtitulo"> 
+                    Esperamos você anciosamente !!
+                </h3>
+            </div>
+
+        </div>
+        <div class="rodape fundoCinza">
+            <footer>
+                <ul>
+                    <li class="subtitulo rodape">
+                        <figure id="iconInsta" class="icon">
+                            <img src="conteudos/instapng 1.png" alt="Icone do instagram.">
+                        </figure>
+                        @hotelml
+                    </li>
+                    <li id="telefone" class="subtitulo rodape">
+                        <figure id="iconTelefone" class="icon">
+                            <img src="conteudos/iconTelefone.png" alt="Icone de iconTelefone">
+                        </figure>
+                        (48)99612-9723
+                    </li>
+                    <li class="subtitulo rodape">
+                        <figure id="iconEmail" class="icon">
+                            <img src="conteudos/iconEmail-removebg-preview.png" alt="Icone de email">
+                        </figure>
+                        hotelml@senac.com.br
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+</body>

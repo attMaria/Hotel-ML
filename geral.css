@@ -1,0 +1,682 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    min-width: 730px;
+}
+
+/*Cabeçalho*/
+
+
+header.fundoCinza{
+    display: grid;
+    grid-template-columns: 250px 450px;
+}
+
+figure.logo{
+    margin: 0%;
+    margin-block-start: 0em;
+    margin-inline-start: 10%;
+    margin-inline-end: 0;
+}
+
+.logo img{
+    float: left;
+}
+
+header nav.navegacao ul{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 0%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    padding-inline-start: 0px;
+    width: fit-content;
+    height: 100%;
+    align-items: center;
+}
+
+li.subtitulo{
+    list-style: none;
+}
+
+#cabecalho li{
+    font-family: 'Nunito', sans-serif, monospace;
+    font-size: 250%;
+    /* border: 1px solid purple; */
+}
+
+#cabecalho li a{
+    color: #0F4A15;
+    height: 125px;
+    margin-top: 0%;
+    float: left;
+    padding-bottom: 0px;
+    padding-top: 75px;
+    width: 150px;
+    margin: 0px;
+}
+
+#cabecalho li a:hover{
+    background-color: #2030224d;
+    color: #ffff;
+    text-shadow: 5px 5px 8px #09220bd7;
+    font-weight: 550;
+}
+
+.logo a img:hover{
+    width: 210px;
+    position: fixed;
+}
+
+
+
+/*rodapé*/
+    figure.icon img{
+        width: 1.4em;
+        height: 1.4em;
+        margin-right: 20px;
+    }
+
+    footer ul li.subtitulo{
+        font-size: 1.85em;
+    }
+
+/*
+header.fundoCinza{
+    height: fit-content;
+}
+
+/*imagensGerais*/
+.imgView{
+    background-image: url(conteudos/imgView1920X1500.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content;
+}
+
+.imgCorte{
+    background-image: url(conteudos/imgCorte.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+
+}
+
+.imgCeu{
+    background-image: url(conteudos/imgCeu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*Fundos transparentes*/
+.fundoPreto{
+    display: inline-block;
+    background: #000000a1;
+    width: 100%;
+    height:100%;
+    content: counter(lista);
+}
+
+.fundoBranco{
+    display: block;
+    background: #ffffffcc;;
+    height:fit-content;
+    width: 100%;
+    margin-top: 0px;
+    padding-bottom: 5%;
+}
+
+h2.fundoVerde{
+    background-color:  #0f4a15b3;
+    width: 100%;
+    height: 1em;
+}
+
+.fundoCinza{
+    display: inline-block;
+    background: #b0adad9f;
+    height: max-content;
+    width: 100%;
+}
+
+.fundoVazio{
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.textoFundoVazio{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+/*Conteudo*/
+#conteudo.fundoBranco{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+article{
+    height: fit-content;
+    padding-bottom: 10%;
+}
+
+article:first-child{
+    padding-top: 14em;
+}
+
+h1{
+    margin: 0px;
+    text-align: center;
+}
+
+h2.cursiva.fundoVerde{
+    display: inline-block;
+    margin: 0px auto auto 0px;
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 0px;
+    color: #ffff;
+    text-align: center;
+}
+
+ul.textoli{
+    width: fit-content;
+    text-align: center;
+}
+
+/*Fonts*/
+.subtitulo{
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    color:#0F4A15;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+}
+
+.subtitulo a{
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    color:#0F4A15;
+}
+
+.cursiva{
+    font-family: 'Allison','Hurricane','Nunito', sans-serif;
+    font-weight: normal;
+    color:#0F4A15;
+    font-size: 9.5em;
+}
+
+.textos{
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    color:#0F4A15;
+    font-size: 2em;
+    text-align: center;
+    width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    /*text-shadow: 5px 5px 30px #000;*/
+}
+
+h1.cursiva.fundoVazio{
+    font-size: 15em
+}
+
+
+/*Especifico pagina index*/
+#imgFachada{
+    background-image: url(conteudos/imgFachada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+p.subtitulo{
+    font-size: 3em;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+    /*Div localização*/
+#mapa{
+    background-color: #0f4a1580;
+    outline: 20px solid #0f4a1580;
+    border-radius: 20px;
+    margin: 40px auto auto auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+#mapa iframe{
+    width:750px;
+    height:605px;
+    border: none;
+    border-radius: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#mapaFundoBranco{
+    height: 1000px;
+}
+
+/*Esecifico pagina quartos*/
+#imgSuitePremium{
+    background-image: url(conteudos/imgSuitePremium.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 100%;
+    background-attachment: fixed;    
+    display: inline-block;
+}
+
+.faixaPreta ul{
+    text-align: left;
+    margin-left: 0%;
+}
+
+#imgSuiteMaster{
+    background-image: url(conteudos/imgSuiteMaster.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 100%;
+    background-attachment: fixed;    
+    display: inline-block;
+}
+
+.faixaPreta{
+    /*border: 1px solid red;/*com borda aparece o scroll*/
+    height: fit-content;
+    width: cover;
+    margin-top: 15%;
+    padding: 1em ;
+    background-color: #00000080;
+}
+
+/*Especificos pagina Lazer*/
+#imgPiscina{
+    background-image: url(conteudos/imgPiscina.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 100%;
+    background-attachment: fixed;    
+}
+
+.textos.branco{
+    color: #ffff;
+}
+
+#imgPiscina .fundoPreto .textos:first-child, #imgSpa .textos:first-child{
+    padding-top: 15%;
+    margin-top: 0;
+}
+
+#imgSpa{
+    background-image: url(conteudos/imgSpa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 100%;
+    background-attachment: fixed;    
+}
+
+#articleSpa{
+    padding-bottom: 0;
+}
+
+/*Especificos pagina reserva*/
+h2.cursiva.subtitulo{
+    font-size: 6em;
+    text-shadow: 5px 5px 2px #d6ecd8;
+    padding-top: 5%;
+}
+
+div.linha1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    /* border: 1px solid black; */
+    width: 100%;
+    align-items: center;
+}
+
+p.textos, label.textos, #hospedes{
+    display: block;
+    text-align: center;
+    width: fit-content;
+}
+
+input{
+    cursor: text;
+}
+
+input, select{
+    width: 15em;
+    height: 2em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    color:#0F4A15;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0;
+}
+
+#linha1 p input{
+    margin-top: 5%;
+}
+
+p.linha label, label.linha{
+    margin-top: 5%;
+    font-size: 4em;
+}
+
+
+#inputVerde{
+    width: 60px;
+    color: #ffff;
+    background-color: #0F4A15;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-transform: full-width;
+    cursor:  text;
+    border-image: none;
+    
+}
+
+#inputVerde::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+#containerBt{
+    margin-top: 5%;
+    display: block;
+    text-align: center;
+}
+
+#btVerificar{
+    display: inline;
+    font-size: 5em;
+    width: fit-content;
+    height: fit-content;
+    padding: 0% 5%;
+    color: #ffff;
+    background-color: #0F4A15;
+    border-radius: 20px;
+    border: none;
+}
+
+#btVerificar:hover{
+    color: #0F4A15;
+    background-color: #ffff;
+}
+
+#textoEscondido{
+    display: none;
+    color: #0F4A15;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    width: 730px;
+    text-align: center;
+    background-image:  radial-gradient(#24332544, #08240a6e, #021a04b9);
+    border-radius: 20px;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#textoEscondido h2, #textoEscondido h3 {
+    line-height: 80%;
+    height: fit-content;
+}
+
+#textoEscondido h2{
+    font-size: 6em;
+    text-shadow: 1px 1px 2px #d6ecd8;
+    padding: 0 5%;
+    line-height: 70%;
+    display: block;
+    text-align: center;
+}
+
+#textoEscondido h3{
+    font-size: 2em;
+    color: #fafffb;
+    font-weight: lighter;
+    text-shadow: 1px 1px 5px #051806f6;
+    width: 500px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+}
+
+#textoEscondido h3.cursiva{
+    font-size: 5em;
+    width: 700px;
+    padding-bottom: 0%;
+}
+
+/*Rodapé*/
+footer ul{
+    /* border: 1px solid blue; */
+    height: auto;
+    width: cover;
+    padding: 0;
+}
+
+li.subtitulo.rodape{
+    /* border: solid 1px red; */
+    float: left;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+    position: static;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+figure.icon{
+    margin: 0;
+    width: fit-content;
+}
+
+figure.icon img{
+    /* border: solid 1px orange; */
+    width: 1.4em;
+    height: 1.4em;
+    object-fit: fill;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+#insta{
+    width: auto;
+}
+
+#telefone{
+    width: auto;
+}
+
+#email{
+    width: auto;
+}
+
+/*teste animação*/
+div.faixaPreta ul {
+    overflow: hidden;
+    white-space: nowrap;
+    /*border-right: 1px solid red;*/
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/*cria efeito de digitalização*/
+@keyframes typing {
+    from {width: 0;text-align: justify; margin-left: 0;}
+    to {width: 100%;}
+}
+
+@keyframes blink-caret{
+    from, to { border-color: transparent}
+    50% {}
+}
+
+/*responsividades*/
+@media(max-width: 1230px){
+    h1.cursiva.fundoVazio {
+        font-size: 12em;/*não funciona*/
+        /* color: red; */
+    }
+
+    input, select{
+        width: 15em;
+        height: 2em;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 1160px){
+    header.fundoCinza{
+        display: grid;
+        grid-template-columns: 120px 350px;
+    }
+    
+    figure.logo img{
+        margin: 0%;
+        margin-block-start: 0em;
+        margin-inline-start: 0%;
+        margin-inline-end: 0;
+        width: 140px;
+    }
+    
+    .logo a img:hover{
+        width: 150px;
+        position: fixed;
+    }
+
+    #cabecalho li a{
+        color: #0F4A15;
+        height: 90px;
+        margin-top: 0%;
+        float: left;
+        padding-bottom: 0px;
+        padding-top: 50px;
+        width: 100px;
+        margin: 0px;
+        font-size: 0.8em;
+    }
+
+    header nav.navegacao ul{
+        margin-inline-start: 40px;
+    }
+
+    /*pagina quartos*/
+    h1.cursiva.fundoVazio {
+        font-size: 10em;/*não funciona*/
+        /* color: purple; */
+    }
+
+    h2.cursiva.fundoVerde{
+        font-size: 8em;
+    }
+
+    .textos{
+        font-size: 1.7em;
+    }
+}
+
+@media(max-width: 842px){
+    h1.cursiva.fundoVazio {
+        font-size: 8em;
+        /* color: orange; */
+    }
+
+    h2.cursiva.fundoVerde{
+        font-size: 7em;
+        height: fit-content;
+    }
+
+    div.imgCorte{
+        height: fit-content;
+    }
+
+    .textos{
+        font-size: 1.55em;
+    }
+
+    input, select{
+        width: 15em;
+        height: 2em;
+        font-size: 1.5em;
+    }
+}
+
+#barraLateral::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px #2d5c329c;
+    background-color: none;
+    border-radius: 10px;
+}
+
+#barraLateral::-webkit-scrollbar{
+    width: 8px;
+    background-color: none;
+}
+
+#barraLateral::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(#0f4a15d3, #21772a8f,#18b9289c);
+}
+
+/* input.radio{
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(#0f4a15d3, #21772a8f,#18b9289c);
+    cursor: pointer;
+} */
+
+
